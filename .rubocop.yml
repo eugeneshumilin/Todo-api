@@ -2,6 +2,7 @@ require:
   - rubocop
   - rubocop-rspec
   - rubocop-performance
+  - rubocop-faker
 
 AllCops:
   TargetRubyVersion: 2.6.5
@@ -42,6 +43,9 @@ Style/HashTransformKeys:
 Style/HashTransformValues:
   Enabled: false
 
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
 Metrics/AbcSize:
   Max: 23
 
@@ -76,3 +80,6 @@ RSpec/EmptyExampleGroup:
 
 RSpec/LetSetup:
   Enabled: false
+
+Faker/DeprecatedArguments:
+  AutoCorrect: true

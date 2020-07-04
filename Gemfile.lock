@@ -169,6 +169,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (0.1.0)
       parser (>= 2.7.0.1)
+    rubocop-faker (1.1.0)
+      faker (>= 2.12.0)
+      rubocop (>= 0.82.0)
     rubocop-performance (1.6.1)
       rubocop (>= 0.71.0)
     rubocop-rspec (1.41.0)
@@ -212,6 +215,7 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.2)
   rspec-rails (~> 4.0.0)
   rubocop
+  rubocop-faker
   rubocop-performance
   rubocop-rspec
   shoulda-matchers (~> 4.0)
