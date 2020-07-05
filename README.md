@@ -1,24 +1,16 @@
-## README
+##### README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### App description
+This is Rails API todo application with jwt authentication.
 
-Things you may want to cover:
+Dependencies: 
 
-* Ruby version
+* Ruby 2.7.1
 
-* System dependencies
+* PostgreSQL 12.2
 
-* Configuration
+### Run locally
+`rails db:create db:migrate db:seed`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Run tests
+`bundle exec rspec`
