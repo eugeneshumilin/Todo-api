@@ -63,7 +63,7 @@ RSpec.describe "Items API", type: :request do
   end
 
   describe "POST /todos/:todo_id/items" do
-    let(:valid_attributes) { { name: 'Learn Rails api', done: false }.to_json }
+    let(:valid_attributes) { { name: "Learn Rails api", done: false }.to_json }
 
     context "when request attributes are valid" do
       before do
@@ -89,7 +89,7 @@ RSpec.describe "Items API", type: :request do
   end
 
   describe "PUT /todos/:todo_id/items/:id" do
-    let(:valid_attributes) { { name: 'Test item' }.to_json }
+    let(:valid_attributes) { { name: "Test item" }.to_json }
 
     before do
       put "/todos/#{todo_id}/items/#{id}", params: valid_attributes, headers: headers

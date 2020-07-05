@@ -51,7 +51,7 @@ RSpec.describe "Todos API", type: :request do
   describe "POST /todos" do
     let(:valid_attributes) do
       # send json payload
-      { title: 'Learn Rails api', created_by: user.id.to_s }.to_json
+      { title: "Learn Rails api", created_by: user.id.to_s }.to_json
     end
 
     context "when the request is valid" do
@@ -75,15 +75,15 @@ RSpec.describe "Todos API", type: :request do
         expect(response).to have_http_status(:unprocessable_entity)
       end
 
-      it 'returns a validation failure message' do
-        expect(json['message'])
+      it "returns a validation failure message" do
+        expect(json["message"])
           .to match(/Validation failed: Title can't be blank/)
       end
     end
   end
 
   describe "PUT /todos/:id" do
-    let(:valid_attributes) { { title: 'Shopping' }.to_json }
+    let(:valid_attributes) { { title: "Shopping" }.to_json }
 
     context "when the record exists" do
       before { put "/todos/#{todo_id}", params: valid_attributes, headers: headers }
